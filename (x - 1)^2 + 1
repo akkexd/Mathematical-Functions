@@ -1,0 +1,21 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Define the function
+def function(x):
+    return (x - 1)**2 + 1
+
+# Generate x values
+x_values = np.linspace(-5, 5, 400)  # Adjust range as needed
+
+# Calculate corresponding y values
+y_values = function(x_values)
+
+# Plot the function
+plt.plot(x_values, y_values, label=r'$y=(x-1)^2+1$')
+plt.xlabel('x')
+plt.ylabel('y')
+plt.title('Graph of $y=(x-1)^2+1$')
+plt.grid(True)
+plt.legend()
+plt.show()
